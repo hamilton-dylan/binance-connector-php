@@ -1,7 +1,7 @@
 {
-    "name": "binance/binance-connector-php",
+    "name": "hamilton-dylan/binance-connector-php",
     "description": "A thin layer for Binance API in PHP",
-    "homepage": "https://github.com/binance/binance-connector-php",
+    "homepage": "https://github.com/hamilton-dylan/binance-connector-php",
     "type": "library",
     "minimum-stability": "stable",
     "license": "MIT",
