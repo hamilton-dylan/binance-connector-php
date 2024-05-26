@@ -6,6 +6,12 @@ use Binance\APIClient;
 
 class Spot extends APIClient
 {
+    const LIMIT_ORDER = 'LIMIT';
+    const MARKET_ORDER = 'MARKET';
+    const STOP_LOSS_LIMIT_ORDER = 'STOP_LOSS_LIMIT';
+    const TAKE_PROFIT_LIMIT_ORDER = 'TAKE_PROFIT_LIMIT';
+    const LIMIT_MAKER = 'LIMIT_MAKER';
+
     use Spot\BLVT;
     use Spot\BSwap;
     use Spot\C2C;
