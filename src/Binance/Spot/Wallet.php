@@ -326,7 +326,7 @@ trait Wallet
     /**
      * Trade Fee (USER_DATA)
      *
-     * GET /sapi/v1/asset/tradeFee
+     * GET /sapi/v1/asset/query/trading-volume
      *
      * Fetch trade fee
      *
@@ -336,7 +336,23 @@ trait Wallet
      */
     public function tradeFee(array $options = [])
     {
-        return $this->signRequest('GET', '/sapi/v1/asset/tradeFee', $options);
+        return $this->signRequest('GET', '/sapi/v1/asset/query/trading-fee', $options);
+    }
+
+    /**
+     * Trade Volume (USER_DATA)
+     *
+     * GET /sapi/v1/asset/query/trading-volume
+     *
+     * Fetch the 30 day rolling trade volume for the account
+     *
+     * Weight(IP): 1
+     *
+     * @param array $options
+     */
+    public function rollingTradeVolume(array $options = [])
+    {
+        return $this->signRequest('GET', '/sapi/v1/asset/query/trading-volume', $options);
     }
 
     /**
